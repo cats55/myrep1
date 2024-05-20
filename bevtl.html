@@ -1,1 +1,29 @@
-<meta http-equiv="refresh" content="0; url=TEST/" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Redirect</title>
+    <script>
+        function redirectToRandomLink() {
+            // List of links
+            const links = [
+                "https://example.com/link1",
+                "https://example.com/link2",
+                "https://example.com/link3",
+         
+            ];
+            const randomIndex = Math.floor(Math.random() * links.length);
+
+ 
+            window.location.href = links[randomIndex];
+        }
+
+
+        window.onload = redirectToRandomLink;
+    </script>
+</head>
+<body>
+    <p>Redirecting to a random link...</p>
+</body>
+</html>
